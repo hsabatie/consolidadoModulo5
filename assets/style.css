@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 50px; /* Ajusta según sea necesario */
+    position: relative;
+}
+
+/* Cada elemento del contenedor (tres secciones donde van las tarjetas) */
+.container__section{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+/* Estilos para el número del rango a la izquierda */
+.range {
+    width: 100px;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 50px; /* Alinea con la primera card de cada sección */
+}
+/*contenedor de todas las tarjetas de cada seccion*/
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Contenedor de la tarjeta de sección */
+.card {
+    background-color: #e8ebd5c2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+}
+/* Estilos para el punto de color */
+.container__point {
+    width: 25px;
+}
+.point {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+
+/* Tarjeta de introducción en cada sección */
+.intro-card {
+    display: flex;
+    align-items: center;
+    
+}
+
+/*
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+*/
