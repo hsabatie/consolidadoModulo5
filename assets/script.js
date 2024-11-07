@@ -1,18 +1,25 @@
 let red=1;
-let blue=6;
-let green=11;
+let green=6;
+let blue=11;
 //capturar evento tarjeta 
 document.getElementById("red").addEventListener("mouseenter",function(){
     if (red<6) {
-        getPersonaje(red,"principal","red")
+        getPersonaje(red,"principal","red")//principal es el secmento HTML donde van los personajes principales
         red++
+
     }
 })
 document.getElementById("green").addEventListener("mouseenter",function(){
-    alert("hola green");
+    if (green<11) {
+        getPersonaje(green,"secundario","green")
+        green++
+    }
 })
 document.getElementById("blue").addEventListener("mouseenter",function(){
-    alert("hola blue");
+    if (blue<16) {
+        getPersonaje(blue,"otros","blue")
+        blue++
+    }
 })
 
 function getPersonaje(id,personaje,color){
